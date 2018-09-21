@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="@Wayne">
 <meta property="og:description" content="原文链接：https://css-tricks.com/updating-a-css-variable-with-javascript/ 先来看一个CSS变量（正式说法是“CSS自定义属性”） 1234:root &amp;#123;  --mouse-x: 0px;  --mouse-y: 0px;&amp;#125; 也许你会用他们来设置一个定位 1234.mover &amp;#123;  left: var(--">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-21T03:07:45.960Z">
+<meta property="og:updated_time" content="2018-09-21T03:30:56.648Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用JavaScript来更新CSS变量">
 <meta name="twitter:description" content="原文链接：https://css-tricks.com/updating-a-css-variable-with-javascript/ 先来看一个CSS变量（正式说法是“CSS自定义属性”） 1234:root &amp;#123;  --mouse-x: 0px;  --mouse-y: 0px;&amp;#125; 也许你会用他们来设置一个定位 1234.mover &amp;#123;  left: var(--">
@@ -67,7 +67,7 @@
         <section id="main"><article id="post-updating-a-css-variable-with-javascript" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/21/updating-a-css-variable-with-javascript/" class="article-date">
-  <time datetime="2018-09-21T03:07:45.960Z" itemprop="datePublished">2018-09-21</time>
+  <time datetime="2018-09-21T03:30:56.647Z" itemprop="datePublished">2018-09-21</time>
 </a>
     
   </div>
@@ -93,11 +93,12 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.mover &#123;</span><br><span class="line">  left: var(--mouse-x);</span><br><span class="line">  top: var(--mouse-y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>如果想通过JavaScript来更新这些值，你可以这样做：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> root = document.documentElement;</span><br><span class="line">root.addEventListener = (<span class="string">"mousemove"</span>, e =&gt; &#123;</span><br><span class="line">  root.style.setProperty(<span class="string">'--mouse-x'</span>, e.clientX + <span class="string">"px"</span>);</span><br><span class="line">  root.style.setProperty(<span class="string">'--mouse-y'</span>, e.clientY + <span class="string">"px"</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<script async src="//jsfiddle.net/dengfengwang/4tfsh19y/4/embed/js,html,css,result/dark/"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wangweiwei.github.io/2018/09/21/updating-a-css-variable-with-javascript/" data-id="cjmbfg5hr0000c3jfcx2g7upz" class="article-share-link">Share</a>
+      <a data-url="http://wangweiwei.github.io/2018/09/21/updating-a-css-variable-with-javascript/" data-id="cjmbg78t00000jpjfk6picyj7" class="article-share-link">Share</a>
       
       
     </footer>
